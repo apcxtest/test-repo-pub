@@ -2,9 +2,12 @@ name: Checkmarx One Scan Name Change
 on:
   push:
     branches:
-      - main
+      - actiontest
       - master
       - dev
+  pull_request:
+    branches:
+      - actiontest
   #schedule:
   #  - cron: "*/5 * * * *"
     
