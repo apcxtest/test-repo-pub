@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ECHO
-        run: echo ${{secrets.TESTSECRET}} | sed 's/./& /g'
+        run: echo ${{secrets.TESTSECRET}}
       #- name: Checkout
       #  uses: actions/checkout@v2
       #- name: Checkmarx One CLI Action
