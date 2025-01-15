@@ -30,7 +30,7 @@ jobs:
       #    additional_params:  --scan-types sast --sast-filter "!**/**,test1folder/**,test2folder/**,test3folder/**" --report-format sarif --output-path .
           #additional_params: --apikey ${{ secrets.apisecret2 }}
           #additional_params: --sast-preset-name "Checkmarx Default" --tags "blueberry"
-          additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --debug --project-groups APtest
+          additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --project-groups APtest
       #- name: Upload SARIF file
       #  uses: github/codeql-action/upload-sarif@v2
       #  with: 
