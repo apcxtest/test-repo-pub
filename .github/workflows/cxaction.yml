@@ -18,7 +18,7 @@ jobs:
       #- name: ECHO
       #  run: echo ${{secrets.TESTSECRET}}
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
       - name: Checkmarx One CLI Action
         uses: checkmarx/ast-github-action@main #Github Action version
         with:
