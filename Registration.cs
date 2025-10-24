@@ -255,7 +255,7 @@ bResult=false;
 // Reg Check Event end
 
 		string p2_member_login=CCUtility.ToSQL(Utility.GetParam("Reg_member_login"), FieldTypes.Text) ;
-		string p2_member_password=CCUtility.ToSQL(Utility.GetParam("Reg_member_password"), FieldTypes.Text) ;
+		// string p2_member_password=CCUtility.ToSQL(Utility.GetParam("Reg_member_password"), FieldTypes.Text) ;
 		string p2_first_name=CCUtility.ToSQL(Utility.GetParam("Reg_first_name"), FieldTypes.Text) ;
 		string p2_last_name=CCUtility.ToSQL(Utility.GetParam("Reg_last_name"), FieldTypes.Text) ;
 		string p2_email=CCUtility.ToSQL(Utility.GetParam("Reg_email"), FieldTypes.Text) ;
