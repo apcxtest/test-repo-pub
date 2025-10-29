@@ -1,13 +1,15 @@
 name: Checkmarx One Scan Name Change
 on:
-  push:
-    branches:
-      - actiontest
-      - master
-      - dev
+  #push:
+  #  branches:
+  #    - actiontest
+  #    - master
+  #    - dev
   pull_request:
     branches:
       - actiontest
+      - apcxtest-patch-1
+      - main
   #schedule:
   #  - cron: "*/5 * * * *"
     
@@ -28,7 +30,7 @@ jobs:
           cx_client_id: ${{ secrets.oauthclient }}
           cx_client_secret: ${{ secrets.oauthsecret }}
       #    additional_params:  --scan-types sast --sast-filter "!**/**,test1folder/**,test2folder/**,test3folder/**" --report-format sarif --output-path .
-          #additional_params: --apikey ${{ secrets.apisecret2 }}
+          #additional_params: --apikey ${{ secrets.apisecret }}
           #additional_params: --sast-preset-name "Checkmarx Default" --tags "blueberry"
           #additionalParams: '-s ./ --file-filter !testfolder --debug'
           #additional_params: --sast-preset-name "Checkmarx Default" --scan-types sast --debug
